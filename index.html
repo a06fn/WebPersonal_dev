@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facundo Nahuel Almada | Analista Programador</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-sans">
 
     <!-- Header Minimalista -->
-    <header class="h-16 flex items-center px-8">
-        <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
-            <div>
-                <h1 class="text-lg font-bold text-slate-200">Facundo Nahuel Almada</h1>
-                <p class="text-xs text-emerald-400 font-medium">Analista Programador</p>
+    <header>
+        <div class="container">
+            <div class="logo-section">
+                <h1>Facundo Nahuel Almada</h1>
+                <p>Analista Programador</p>
             </div>
-            <div class="flex gap-3">
-                <a href="mailto:tu-email@example.com" class="p-2 border border-slate-600 rounded hover:bg-slate-800 transition" title="Email">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="social-links">
+                <a href="mailto:tu-email@example.com" title="Email">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
                 </a>
-                <a href="https://github.com" target="_blank" class="p-2 border border-slate-600 rounded hover:bg-slate-800 transition" title="GitHub">
-                    <svg class="w-5 h-5 text-slate-400" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <a href="https://github.com" target="_blank" title="GitHub">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
                 </a>
             </div>
@@ -33,181 +32,161 @@
     </header>
 
     <!-- Sidebar Flotante -->
-    <aside class="fixed left-8 top-1/2 transform -translate-y-1/2 z-40">
-        <nav class="flex flex-col gap-6 bg-slate-800/30 backdrop-blur border border-slate-700 rounded-lg p-4">
-            <a href="#about" class="p-3 rounded hover:bg-slate-700 transition group" title="Un Poquito de Mi">
-                <svg class="w-5 h-5 text-emerald-400 group-hover:text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <aside>
+        <nav>
+            <a href="#about" class="emerald" title="Un Poquito de Mi">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
             </a>
-            <a href="#skills" class="p-3 rounded hover:bg-slate-700 transition group" title="Skills">
-                <svg class="w-5 h-5 text-blue-400 group-hover:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <a href="#skills" class="blue" title="Skills">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
             </a>
-            <a href="#projects" class="p-3 rounded hover:bg-slate-700 transition group" title="Proyectos">
-                <svg class="w-5 h-5 text-purple-400 group-hover:text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <a href="#projects" class="purple" title="Proyectos">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
                 </svg>
             </a>
-            <div class="border-t border-slate-600 my-2"></div>
-            <button id="theme-toggle" class="p-3 rounded hover:bg-slate-700 transition group" title="Cambiar tema">
-                <svg class="w-5 h-5 text-yellow-400 group-hover:text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
+            <div class="divider"></div>
+            <button id="theme-toggle" class="yellow" title="Cambiar tema">
+                <svg fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 3v1m0 16v1m9-9h-1m-16 0H1m15.364 1.636l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                 </svg>
             </button>
 
             <a href="https://github.com/a06fn/WebPersonal/blob/main/assets/demos/CV-Facundo-Nahuel-Almada.pdf" 
                target="_blank"
-               class="p-3 rounded hover:bg-slate-700 transition group" 
+               class="emerald" 
                title="Ver CV en GitHub">
-               <i class="fa-solid fa-briefcase text-white-400 group-hover:text-white-300" style="font-size: 1.25rem;"></i>
+               <i class="fa-solid fa-briefcase"></i>
             </a>
 
-            <button id="language-toggle" class="p-3 rounded hover:bg-slate-700 transition group" title="Cambiar idioma">
+            <button id="language-toggle" class="emerald" title="Cambiar idioma">
                 <span id="flag-icon"></span>
             </button>
         </nav>
     </aside>
 
     <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-8 py-12">
+    <main>
 
         <!-- Hero Section -->
-        <section class="mb-16">
-            <div class="text-center">
-                <h2 class="text-4xl font-bold mb-4">Automatización de Procesos</h2>
-                <p class="text-gray-400 text-base max-w-2xl mx-auto leading-relaxed">
-                    Planificación, análisis y desarrollo: soluciones end-to-end.
-                </p>
-            </div>
+        <section class="hero-section">
+            <h2>Automatización de Procesos</h2>
+            <p>Planificación, análisis y desarrollo: soluciones end-to-end.</p>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="mb-16 scroll-mt-16">
-            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                <span class="w-6 h-1 bg-emerald-400 rounded-full"></span>
+        <section id="about">
+            <h2>
+                <span class="accent-bar"></span>
                 Un poquito de mí
             </h2>
-            <div class="bg-slate-800/20 border border-slate-700 rounded-xl p-8">
-                <p class="text-gray-400 text-sm leading-relaxed">
+            <div class="content-box">
+                <p>
                     Analista Programador argentino enfocado en convertir datos en soluciones. Me especializo en planificación, recolección y análisis de datos, aplicando automatización y desarrollo de software para optimizar procesos administrativos.
                 </p>
-                <p class="text-gray-400 text-sm leading-relaxed mt-4">
+                <p>
                     Mi primer PC fue una Pentium 486 en la que los problemas a resolver eran instalar juegos en DOS. Desde entonces acumulé cientos de horas aprendiendo de manera autodidacta. Siento la necesidad de que todo lo que desarrollo se vea limpio y ordenado—retocando hasta el último detalle visual. Actualmente curso una carrera informática en la Universidad Abierta Interamericana para formalizar todas mis habilidades.
                 </p>
-                <p class="text-gray-400 text-sm leading-relaxed mt-4">
+                <p>
                     En cada proyecto busco esa intersección entre lo técnico y lo útil. Me gusta hacer que las cosas funcionen.
                 </p>
             </div>
         </section>
 
         <!-- Computer Skills Section -->
-        <section id="skills" class="mb-16 scroll-mt-16">
-            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                <span class="w-6 h-1 bg-emerald-400 rounded-full"></span>
+        <section id="skills">
+            <h2>
+                <span class="accent-bar"></span>
                 Habilidades Informáticas
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Coding -->
-                <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5">
-                    <h3 class="text-sm text-center font-semibold text-blue-400 mb-4">Lenguajes & Herramientas</h3>
-                    <div class="grid grid-cols-4 gap-3">
-                        <!-- Python -->
-                        <div class="skill-icon bg-blue-500/20 hover:bg-blue-500/40">
-                            <i class="fab fa-python text-blue-400"></i>
-                            <span class="text-blue-300">Python</span>
+            <div class="grid">
+                <!-- Lenguajes & Herramientas -->
+                <div class="skill-box">
+                    <h3>Lenguajes & Herramientas</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon blue">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
                         </div>
-                        <!-- C# -->
-                        <div class="skill-icon bg-blue-500/20 hover:bg-blue-500/40">
-                            <div style="display: flex; align-items: center; justify-content: center; gap: 0.1rem; font-weight: bold; color: #2196F3; font-family: monospace; line-height: 1; height: 1.75rem;">
-                                <span style="font-size: 2.3rem; line-height: 1;">C</span><span style="font-size: 1.8rem; line-height: 1;">#</span>
-                            </div>
-                            <span class="text-blue-300">C#</span>
+                        <div class="skill-icon blue">
+                            <svg viewBox="0 0 100 100" style="width: 28px; height: 28px;">
+                                <text x="50" y="65" font-size="60" font-weight="bold" text-anchor="middle" fill="#2196F3">C#</text>
+                            </svg>
+                            <span>C#</span>
                         </div>
-                        <!-- VBA -->
-                        <div class="skill-icon bg-blue-500/20 hover:bg-blue-500/40">
-                            <i class="fas fa-file-excel text-blue-400"></i>
-                            <span class="text-blue-300">VBA</span>
+                        <div class="skill-icon blue">
+                            <i class="fas fa-file-excel"></i>
+                            <span>VBA</span>
                         </div>
-                        <!-- C -->
-                        <div class="skill-icon bg-blue-500/20 hover:bg-blue-500/40">
-                            <i class="fa-solid fa-c text-blue-400"></i>
-                            <span class="text-blue-300">C</span>
+                        <div class="skill-icon blue">
+                            <i class="fa-solid fa-c"></i>
+                            <span>C</span>
                         </div>
-                        <!-- JavaScript -->
-                        <div class="skill-icon bg-orange-500/20 hover:bg-orange-500/40">
-                            <i class="fab fa-js-square text-orange-400"></i>
-                            <span class="text-orange-300">JS</span>
+                        <div class="skill-icon orange">
+                            <i class="fab fa-js-square"></i>
+                            <span>JS</span>
                         </div>
-                        <!-- HTML5 -->
-                        <div class="skill-icon bg-orange-500/20 hover:bg-orange-500/40">
-                            <i class="fab fa-html5 text-orange-400"></i>
-                            <span class="text-orange-300">HTML5</span>
+                        <div class="skill-icon orange">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
                         </div>
-                        <!-- CSS3 -->
-                        <div class="skill-icon bg-orange-500/20 hover:bg-orange-500/40">
-                            <i class="fab fa-css3-alt text-orange-400"></i>
-                            <span class="text-orange-300">CSS3</span>
+                        <div class="skill-icon orange">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
                         </div>
-                        <!-- App Script -->
-                        <div class="skill-icon bg-orange-500/20 hover:bg-orange-500/40">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="28" height="28" viewBox="0 0 256 256" xml:space="preserve">
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-                                    <path d="M 57.08 16.707 c -1.802 -5.545 -7.757 -8.579 -13.302 -6.778 c -5.545 1.802 -8.579 7.757 -6.778 13.302 l 13.563 41.743 l 11.1 -34.161 L 57.08 16.707 z M 47.022 25.312 c -2.91 0 -5.268 -2.359 -5.268 -5.268 s 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 S 49.932 25.312 47.022 25.312 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(257,167,38); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-                                    <path d="M 50.138 73.371 L 39.156 39.573 l -12.292 -8.93 c -4.717 -3.427 -11.318 -2.381 -14.745 2.335 c -3.427 4.717 -2.381 11.318 2.335 14.745 l 35.771 25.989 C 50.192 73.6 50.168 73.484 50.138 73.371 z M 20.503 44.286 c -2.91 0 -5.268 -2.359 -5.268 -5.268 s 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 S 23.413 44.286 20.503 44.286 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(257,167,38); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-                                    <path d="M 48.462 76.14 L 25.466 59.432 h -14.91 C 4.726 59.432 0 64.158 0 69.988 s 4.726 10.556 10.556 10.556 h 44.038 L 48.462 76.14 z M 10.622 75.296 c -2.91 0 -5.268 -2.359 -5.268 -5.268 c 0 -2.91 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 C 15.89 72.937 13.531 75.296 10.622 75.296 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(257,167,38); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-                                    <path d="M 82.703 9.929 c -5.545 -1.802 -11.5 1.233 -13.302 6.778 L 53.182 66.624 c -1.802 5.545 1.233 11.5 6.778 13.302 c 5.545 1.802 11.5 -1.233 13.302 -6.778 L 89.48 23.231 C 91.282 17.686 88.248 11.731 82.703 9.929 z M 63.277 75.106 c -2.91 0 -5.268 -2.359 -5.268 -5.268 c 0 -2.91 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 C 68.546 72.748 66.187 75.106 63.277 75.106 z M 79.546 25.037 c -2.91 0 -5.268 -2.359 -5.268 -5.268 c 0 -2.91 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 C 84.814 22.679 82.456 25.037 79.546 25.037 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(257,167,38); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                        <div class="skill-icon orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" style="width: 28px; height: 28px;">
+                                <g transform="translate(1.4 1.4) scale(2.81)">
+                                    <path d="M 57.08 16.707 c -1.802 -5.545 -7.757 -8.579 -13.302 -6.778 c -5.545 1.802 -8.579 7.757 -6.778 13.302 l 13.563 41.743 l 11.1 -34.161 L 57.08 16.707 z M 47.022 25.312 c -2.91 0 -5.268 -2.359 -5.268 -5.268 s 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 S 49.932 25.312 47.022 25.312 z" fill="rgb(257,167,38)"/>
+                                    <path d="M 50.138 73.371 L 39.156 39.573 l -12.292 -8.93 c -4.717 -3.427 -11.318 -2.381 -14.745 2.335 c -3.427 4.717 -2.381 11.318 2.335 14.745 l 35.771 25.989 C 50.192 73.6 50.168 73.484 50.138 73.371 z M 20.503 44.286 c -2.91 0 -5.268 -2.359 -5.268 -5.268 s 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 S 23.413 44.286 20.503 44.286 z" fill="rgb(257,167,38)"/>
+                                    <path d="M 48.462 76.14 L 25.466 59.432 h -14.91 C 4.726 59.432 0 64.158 0 69.988 s 4.726 10.556 10.556 10.556 h 44.038 L 48.462 76.14 z M 10.622 75.296 c -2.91 0 -5.268 -2.359 -5.268 -5.268 c 0 -2.91 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 C 15.89 72.937 13.531 75.296 10.622 75.296 z" fill="rgb(257,167,38)"/>
+                                    <path d="M 82.703 9.929 c -5.545 -1.802 -11.5 1.233 -13.302 6.778 L 53.182 66.624 c -1.802 5.545 1.233 11.5 6.778 13.302 c 5.545 1.802 11.5 -1.233 13.302 -6.778 L 89.48 23.231 C 91.282 17.686 88.248 11.731 82.703 9.929 z M 63.277 75.106 c -2.91 0 -5.268 -2.359 -5.268 -5.268 c 0 -2.91 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 C 68.546 72.748 66.187 75.106 63.277 75.106 z M 79.546 25.037 c -2.91 0 -5.268 -2.359 -5.268 -5.268 c 0 -2.91 2.359 -5.268 5.268 -5.268 c 2.91 0 5.268 2.359 5.268 5.268 C 84.814 22.679 82.456 25.037 79.546 25.037 z" fill="rgb(257,167,38)"/>
                                 </g>
                             </svg>
-                            <span class="text-orange-300">App Script</span>
+                            <span>App Script</span>
                         </div>
-                        <!-- SQL -->
-                        <div class="skill-icon bg-purple-500/20 hover:bg-purple-500/40">
-                            <i class="fas fa-database text-purple-400"></i>
-                            <span class="text-purple-300">SQL</span>
+                        <div class="skill-icon purple">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Office & Admin -->
-                <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5">
-                    <h3 class="text-sm text-center font-semibold text-blue-400 mb-4">Oficina & Análisis</h3>
-                    <div class="grid grid-cols-4 gap-3">
-                        <!-- Planificación -->
-                        <div class="skill-icon bg-red-800/20 hover:bg-red-600/40">
-                            <i class="fas fa-calendar-alt text-red-400"></i>
-                            <span class="text-red-300">Plan</span>
+                <!-- Oficina & Análisis -->
+                <div class="skill-box">
+                    <h3>Oficina & Análisis</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon red">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Plan</span>
                         </div>
-                        <!-- Automatización -->
-                        <div class="skill-icon bg-red-800/20 hover:bg-red-600/40">
-                            <i class="fas fa-cogs text-red-400"></i>
-                            <span class="text-red-300">Auto</span>
+                        <div class="skill-icon red">
+                            <i class="fas fa-cogs"></i>
+                            <span>Auto</span>
                         </div>
-                        <!-- Geolocalización -->
-                        <div class="skill-icon bg-red-800/20 hover:bg-red-600/40">
-                            <i class="fas fa-map-location-dot text-red-400"></i>
-                            <span class="text-red-300">Geo</span>
+                        <div class="skill-icon red">
+                            <i class="fas fa-map-location-dot"></i>
+                            <span>Geo</span>
                         </div>
-                        <!-- IA -->
-                        <div class="skill-icon bg-red-800/20 hover:bg-red-600/40">
-                            <i class="fas fa-brain text-red-400"></i>
-                            <span class="text-red-300">IA</span>
+                        <div class="skill-icon red">
+                            <i class="fas fa-brain"></i>
+                            <span>IA</span>
                         </div>
-                        <!-- Excel -->
-                        <div class="skill-icon bg-emerald-800/20 hover:bg-emerald-600/40">
-                            <i class="fas fa-file-excel text-emerald-600"></i>
-                            <span class="text-emerald-600">XLSM</span>
+                        <div class="skill-icon emerald">
+                            <i class="fas fa-file-excel"></i>
+                            <span>XLSM</span>
                         </div>
-                        <!-- JSON -->
-                        <div class="skill-icon bg-emerald-800/20 hover:bg-emerald-600/40">
-                            <i class="fa-solid fa-file-code text-emerald-600"></i>
-                            <span class="text-emerald-600">JSON</span>
+                        <div class="skill-icon emerald">
+                            <i class="fa-solid fa-file-code"></i>
+                            <span>JSON</span>
                         </div>
-                        <!-- CSV -->
-                        <div class="skill-icon bg-emerald-800/20 hover:bg-emerald-600/40">
-                            <i class="fas fa-table text-emerald-600"></i>
-                            <span class="text-emerald-600">CSV</span>
+                        <div class="skill-icon emerald">
+                            <i class="fas fa-table"></i>
+                            <span>CSV</span>
                         </div>
                     </div>
                 </div>
@@ -215,96 +194,102 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="mb-8 scroll-mt-16">
-            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                <span class="w-6 h-1 bg-emerald-400 rounded-full"></span>
+        <section id="projects">
+            <h2>
+                <span class="accent-bar"></span>
                 Proyectos Destacados
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid">
                 
                 <!-- Proyecto 1 -->
-                <div class="project-card bg-slate-800/40 border border-slate-700 rounded-xl p-6 flex flex-col">
-                    <div class="flex gap-2 mb-4 justify-center">
-                        <span class="text-xs font-bold px-2 py-1 bg-blue-500/20 text-blue-600 rounded">PY</span>
-                        <span class=" text-xs font-bold px-2 py-1 bg-orange-500/20 text-orange-600 rounded">JS</span>
-                        <span class=" text-xs font-bold px-2 py-1 bg-orange-500/20 text-orange-600 rounded">CSS</span>
-                        <span class=" text-xs font-bold px-2 py-1 bg-orange-500/20 text-orange-600 rounded">HTML</span>
-                        <span class=" text-xs font-bold px-2 py-1 bg-green-500/20 text-green-600 rounded">XLSM</span>
-                        <span class=" text-xs font-bold px-2 py-1 bg-green-500/20 text-green-600 rounded">CSV</span>
-                        <span class=" text-xs font-bold px-2 py-1 bg-green-500/20 text-green-600 rounded">JSON</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-red-500/20 text-red-600 rounded">IA</span> 
+                <div class="project-card">
+                    <div class="project-tags">
+                        <span class="project-tag blue">PY</span>
+                        <span class="project-tag orange">JS</span>
+                        <span class="project-tag orange">CSS</span>
+                        <span class="project-tag orange">HTML</span>
+                        <span class="project-tag green">XLSM</span>
+                        <span class="project-tag green">CSV</span>
+                        <span class="project-tag green">JSON</span>
+                        <span class="project-tag red">IA</span>
                     </div>
-                    <h3 class="text-lg font-bold text-center mb-2">Sistema Integrado de Relevamiento Prestacional</h3>
-                    <p class="text-justify text-gray-400 text-sm mb-6">
+                    <h3>Sistema Integrado de Relevamiento Prestacional</h3>
+                    <p class="flex-grow">
                         Solución Integral para el relevamiento prestacional médico de una importante obra social.
                     </p>
-                    <p class="text-justify text-gray-400 text-sm mb-6">
+                    <p class="flex-grow">
                         Integra el uso de macros y formularios en Excel, para la recolección de los datos. A esos datos se los pasa por un script de Python que automatiza la generación de coordenadas geográficas para cada registro. Por ultimo, la información generada es publicada en una Tabla de Prestadores de uso interno, el cual contiene una tabla general con varios filtros y un mapa donde se pueden observar los prestadores distribuidos por las Provincias.
                     </p>
-                    <div class="justify-center flex gap-3 mt-auto">
-                        <button onclick="openVideoModal('https://raw.githubusercontent.com/bqchi/WebPersonal/main/assets/demos/demo-prestadores.mp4')" class="text-xs font-semibold bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 rounded transition" style="border: none; cursor: pointer;">Demo</button>
+                    <div class="button-group">
+                        <button onclick="openVideoModal('https://raw.githubusercontent.com/a06fn/WebPersonal/main/assets/demos/demo-prestadores.mp4')">Demo</button>
                     </div>
                 </div>
 
-                <!-- Proyecto 2 : Mapa de Inteligencia de Afiliados -->
-                <div class="project-card bg-slate-800/40 border border-slate-700 rounded-xl p-6 flex flex-col">
-                    <div class="flex gap-2 mb-4 justify-center">
-                        <span class="text-xs font-bold px-2 py-1 bg-green-500/20 text-green-600 rounded">XLSM</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-blue-500/20 text-blue-600 rounded">PY</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-green-500/20 text-green-600 rounded">JSON</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-orange-500/20 text-orange-600 rounded">HTML</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-red-500/20 text-red-600 rounded">IA</span> 
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-tags">
+                        <span class="project-tag green">XLSM</span>
+                        <span class="project-tag blue">PY</span>
+                        <span class="project-tag green">JSON</span>
+                        <span class="project-tag orange">HTML</span>
+                        <span class="project-tag red">IA</span>
                     </div>
-                    <h3 class="text-center text-lg font-bold mb-2">Mapa de Inteligencia de Afiliados</h3>
-                    <p class="text-justify text-gray-400 text-sm mb-6">Dashboard que geolocaliza población de obra social.</p> 
-                    <p class="text-justify text-gray-400 text-sm mb-6">Identifica densidad de afiliados para optimizar contratación de servicios y detectar zonas sin cobertura. Se produce a partir de un extracto del sistema de la empresa. Luego de normalizarse los datos, se utiliza un script de Python para Generar coordenadas y representar los datos en un mapa de Argentina.</p>
-                    <div class="justify-center flex gap-3 mt-auto">
-                        <button onclick="openVideoModal('https://raw.githubusercontent.com/bqchi/WebPersonal/main/assets/demos/demo-mapaafiliados.mp4')" class="text-xs font-semibold bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 rounded transition" style="border: none; cursor: pointer;">Demo</button>
+                    <h3>Mapa de Inteligencia de Afiliados</h3>
+                    <p class="flex-grow">Dashboard que geolocaliza población de obra social.</p>
+                    <p class="flex-grow">
+                        Identifica densidad de afiliados para optimizar contratación de servicios y detectar zonas sin cobertura. Se produce a partir de un extracto del sistema de la empresa. Luego de normalizarse los datos, se utiliza un script de Python para Generar coordenadas y representar los datos en un mapa de Argentina.
+                    </p>
+                    <div class="button-group">
+                        <button onclick="openVideoModal('https://raw.githubusercontent.com/a06fn/WebPersonal/main/assets/demos/demo-mapaafiliados.mp4')">Demo</button>
                     </div>
                 </div>
 
                 <!-- Proyecto 3 -->
-                <div class="project-card bg-slate-800/40 border border-slate-700 rounded-xl p-6 flex flex-col">
-                    <div class="flex gap-2 mb-4 justify-center">
-                        <span class="text-xs font-bold px-2 py-1 bg-green-500/20 text-green-600 rounded">XLSM</span>
-                        <span class=" text-xs font-bold px-2 py-1 bg-blue-500/20 text-blue-600 rounded">VBA</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-red-500/20 text-red-600 rounded">IA</span> 
+                <div class="project-card">
+                    <div class="project-tags">
+                        <span class="project-tag green">XLSM</span>
+                        <span class="project-tag blue">VBA</span>
+                        <span class="project-tag red">IA</span>
                     </div>
-                    <h3 class="text-center text-lg font-bold mb-2">Gestor de Negociaciones Arancelarias</h3>
-                    <p class="text-justify text-gray-400 text-sm mb-6 flex-grow">Aplicación para seguimiento de acuerdos comerciales con prestadores.</p>
-                    <p class="text-justify text-gray-400 text-sm mb-6 flex-grow">Hecha en Excel con formularios validados y automatizados. Tiene distintas funciones como: Control de vigencias, registro de incrementos, campos de texto para detalles, registro de fechas, entre otras cosas.</p>
-                    <div class="justify-center flex gap-3 mt-auto">
-                        <button onclick="openVideoModal('https://raw.githubusercontent.com/bqchi/WebPersonal/main/assets/demos/demo-negociacionesxlsm.mp4')" class="text-xs font-semibold bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 rounded transition" style="border: none; cursor: pointer;">Demo</button>
+                    <h3>Gestor de Negociaciones Arancelarias</h3>
+                    <p class="flex-grow">Aplicación para seguimiento de acuerdos comerciales con prestadores.</p>
+                    <p class="flex-grow">
+                        Hecha en Excel con formularios validados y automatizados. Tiene distintas funciones como: Control de vigencias, registro de incrementos, campos de texto para detalles, registro de fechas, entre otras cosas.
+                    </p>
+                    <div class="button-group">
+                        <button onclick="openVideoModal('https://raw.githubusercontent.com/a06fn/WebPersonal/main/assets/demos/demo-negociacionesxlsm.mp4')">Demo</button>
                     </div>
                 </div>
 
                 <!-- Proyecto 4 -->
-                <div class="project-card bg-slate-800/40 border border-slate-700 rounded-xl p-6 flex flex-col">
-                    <div class="flex gap-2 mb-4 justify-center">
-                        <span class=" text-xs font-bold px-2 py-1 bg-orange-500/20 text-orange-600 rounded">APP SCRIPT</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-red-500/20 text-red-600 rounded">IA</span>
+                <div class="project-card">
+                    <div class="project-tags">
+                        <span class="project-tag orange">APP SCRIPT</span>
+                        <span class="project-tag red">IA</span>
                     </div>
-                    <h3 class="text-center text-lg font-bold mb-2">App de Negociaciones Arancelarias</h3>
-                    <p class="text-justify text-gray-400 text-sm mb-6 flex-grow">Aplicación web para seguimiento de acuerdos comerciales con prestadores.</p>
-                    <p class="text-justify text-gray-400 text-sm mb-6 flex-grow">Hecha en Excel con formularios validados y automatizados. Tiene distintas funciones como: Control de vigencias, registro de incrementos, campos de texto para detalles, registro de fechas, entre otras cosas.</p>
-                    <div class="justify-center flex gap-3 mt-auto">
-                        <button onclick="openVideoModal('https://raw.githubusercontent.com/bqchi/WebPersonal/main/assets/demos/demo-negociacionesapp.mp4')" class="text-xs font-semibold bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 rounded transition" style="border: none; cursor: pointer;">Demo</button>
+                    <h3>App de Negociaciones Arancelarias</h3>
+                    <p class="flex-grow">Aplicación web para seguimiento de acuerdos comerciales con prestadores.</p>
+                    <p class="flex-grow">
+                        Hecha en Excel con formularios validados y automatizados. Tiene distintas funciones como: Control de vigencias, registro de incrementos, campos de texto para detalles, registro de fechas, entre otras cosas.
+                    </p>
+                    <div class="button-group">
+                        <button onclick="openVideoModal('https://raw.githubusercontent.com/a06fn/WebPersonal/main/assets/demos/demo-negociacionesapp.mp4')">Demo</button>
                     </div>
                 </div>
 
                 <!-- Proyecto 5 -->
-                <div class="project-card bg-slate-800/40 border border-slate-700 rounded-xl p-6 flex flex-col">
-                    <div class="flex gap-2 mb-4 justify-center">
-                        <span class=" text-xs font-bold px-2 py-1 bg-blue-500/20 text-blue-600 rounded">C#</span>
-                        <span class=" text-xs font-bold px-2 py-1 bg-blue-500/20 text-blue-600 rounded">C</span>
+                <div class="project-card">
+                    <div class="project-tags">
+                        <span class="project-tag blue">C#</span>
+                        <span class="project-tag blue">C</span>
                     </div>
-                    <h3 class="text-center text-lg font-bold mb-2">Proyectos Académicos UAI</h3>
-                    <p class="text-justify text-gray-400 text-sm mb-6 flex-grow">
+                    <h3>Proyectos Académicos UAI</h3>
+                    <p class="flex-grow">
                         Desarrollos en C# y C: aplicaciones de escritorio, estructuras de datos, lógica algorítmica. Base para sólido entendimiento de programación.
                     </p>
-                    <div class="flex gap-3 mt-auto">
-                        <a href="#" class="text-xs font-semibold border border-slate-600 hover:bg-slate-700 px-3 py-1.5 rounded transition">Repos</a>
+                    <div class="button-group">
+                        <a href="#">Repos</a>
                     </div>
                 </div>
 
@@ -314,13 +299,12 @@
     </main>
 
     <!-- Footer Minimalista -->
-    <footer class="h-12 flex items-center px-8 gap-4">
+    <footer>
         <div class="visitor-counter" id="visitor-counter">
-            <img id="counter-img" src="https://visitor-badge.laobi.icu/badge?page_id=bqchi.visitor-badge&left_text=Views&left_color=%23595959&right_color=%2388a423&query_only=true"/>
+            <img id="counter-img" src="https://visitor-badge.laobi.icu/badge?page_id=a06fn.visitor-badge&left_text=Views&left_color=%23595959&right_color=%2388a423&query_only=true" alt="visitor counter"/>
         </div>
-
-        <div class="flex-1 text-center">
-            <p class="text-gray-500 text-xs">© 2026 | Analista Programador & Developer</p>
+        <div class="copyright">
+            <p>© 2026 | Analista Programador & Developer</p>
         </div>
     </footer>
 
@@ -331,16 +315,16 @@
         
         if (!isDarkMode) {
             document.body.classList.add('light-mode');
-            themeToggle.innerHTML = '🌙';
+            themeToggle.textContent = '🌙';
         } else {
-            themeToggle.innerHTML = '☀️';
+            themeToggle.textContent = '☀️';
         }
         
         themeToggle.addEventListener('click', () => {
             document.body.classList.toggle('light-mode');
             const isLight = document.body.classList.contains('light-mode');
             localStorage.setItem('theme', isLight ? 'light' : 'dark');
-            themeToggle.innerHTML = isLight ? '🌙' : '☀️';
+            themeToggle.textContent = isLight ? '🌙' : '☀️';
         });
 
         // ========== TRADUCCIÓN A INGLÉS ==========
@@ -384,7 +368,7 @@
                 'Planificación, análisis y desarrollo: soluciones end-to-end.': 'Planning, analysis and development: end-to-end solutions.',
                 'Un poquito de mí': 'A bit about me',
                 'Analista Programador argentino enfocado en convertir datos en soluciones. Me especializo en planificación, recolección y análisis de datos, aplicando automatización y desarrollo de software para optimizar procesos administrativos.': 'Argentine Programming Analyst focused on turning data into solutions. I specialize in planning, data collection and analysis, applying automation and software development to optimize administrative processes.',
-                'Mi primer PC fue una Pentium 486 en la que los problemas a resolver eran instalar juegos en DOS. Desde entonces acumulé cientos de horas aprendiendo de manera autodidacta. Siento la necesidad de que todo lo que desarrolle se vea limpio y ordenado—retocando hasta el último detalle visual. Actualmente curso una carrera informática en la Universidad Abierta Interamericana para formalizar todas mis habilidades.': 'My first PC was a Pentium 486 where the problems to solve were installing games in DOS. Since then I have accumulated hundreds of hours learning in a self-taught way. I feel the need for everything I develop to look clean and organized—tweaking every visual detail. I am currently studying computer science at Universidad Abierta Interamericana to formalize all my skills.',
+                'Mi primer PC fue una Pentium 486 en la que los problemas a resolver eran instalar juegos en DOS. Desde entonces acumulé cientos de horas aprendiendo de manera autodidacta. Siento la necesidad de que todo lo que desarrollo se vea limpio y ordenado—retocando hasta el último detalle visual. Actualmente curso una carrera informática en la Universidad Abierta Interamericana para formalizar todas mis habilidades.': 'My first PC was a Pentium 486 where the problems to solve were installing games in DOS. Since then I have accumulated hundreds of hours learning in a self-taught way. I feel the need for everything I develop to look clean and organized—tweaking every visual detail. I am currently studying computer science at Universidad Abierta Interamericana to formalize all my skills.',
                 'En cada proyecto busco esa intersección entre lo técnico y lo útil. Me gusta hacer que las cosas funcionen.': 'In each project I seek that intersection between the technical and the useful. I like to make things work.',
                 'Habilidades Informáticas': 'Computer Skills',
                 'Lenguajes & Herramientas': 'Languages & Tools',
@@ -399,7 +383,7 @@
                 'Identifica densidad de afiliados para optimizar contratación de servicios y detectar zonas sin cobertura. Se produce a partir de un extracto del sistema de la empresa. Luego de normalizarse los datos, se utiliza un script de Python para Generar coordenadas y representar los datos en un mapa de Argentina.': 'Identifies affiliate density to optimize service contracting and detect areas without coverage. It is produced from an extract of the company system. After normalizing the data, a Python script is used to generate coordinates and represent the data on a map.',
                 'Gestor de Negociaciones Arancelarias': 'Tariff Negotiation Manager',
                 'Aplicación para seguimiento de acuerdos comerciales con prestadores.': 'Application for monitoring commercial agreements with providers.',
-                'Hecha en Excel con formularios validados y automatizados. Tiene distintas funciones como:  Control de vigencias, registro de incrementos, campos de texto para detalles, registro de fechas, entre otras cosas.': 'Made in Excel with validated and automated forms. It has different functions such as: Validity control, increment record, text fields for details, date record, among other things.',
+                'Hecha en Excel con formularios validados y automatizados. Tiene distintas funciones como: Control de vigencias, registro de incrementos, campos de texto para detalles, registro de fechas, entre otras cosas.': 'Made in Excel with validated and automated forms. It has different functions such as: Validity control, increment record, text fields for details, date record, among other things.',
                 'App de Negociaciones Arancelarias': 'Tariff Negotiation App',
                 'Aplicación web para seguimiento de acuerdos comerciales con prestadores.': 'Web application for monitoring commercial agreements with providers.',
                 'Proyectos Académicos UAI': 'UAI Academic Projects',
@@ -411,9 +395,11 @@
                 'Cambiar tema': 'Toggle Theme',
                 'Cambiar idioma': 'Toggle Language',
                 'Ver CV en GitHub': 'View CV on GitHub',
+                'Un Poquito de Mi': 'A bit about me',
                 'Skills': 'Skills',
                 'Proyectos': 'Projects',
-                'Email': 'Email'
+                'Email': 'Email',
+                'GitHub': 'GitHub'
             }
         };
         
@@ -468,19 +454,33 @@
 
         // ========== MODAL PARA VIDEOS ==========
         function openVideoModal(videoUrl) {
-            const modal = document.createElement('div');
-            modal.innerHTML = `
-                <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: flex; align-items: center; justify-content: center; z-index: 2000; cursor: pointer;" onclick="this.remove()">
-                    <div style="position: relative; width: 90%; max-width: 1200px; cursor: default;" onclick="event.stopPropagation()">
-                        <button onclick="this.parentElement.parentElement.remove()" style="position: absolute; top: -40px; right: 0; background: none; border: none; color: white; font-size: 28px; cursor: pointer; font-weight: bold;">✕</button>
-                        <video width="100%" controls autoplay style="border-radius: 8px;">
-                            <source src="${videoUrl}" type="video/mp4">
-                            Tu navegador no soporta videos HTML5
-                        </video>
-                    </div>
-                </div>
-            `;
-            document.body.appendChild(modal);
+            const backdrop = document.createElement('div');
+            backdrop.className = 'video-modal-backdrop';
+            backdrop.onclick = function() { backdrop.remove(); };
+            
+            const content = document.createElement('div');
+            content.className = 'video-modal-content';
+            content.onclick = function(e) { e.stopPropagation(); };
+            
+            const closeBtn = document.createElement('button');
+            closeBtn.className = 'video-modal-close';
+            closeBtn.textContent = '✕';
+            closeBtn.onclick = function() { backdrop.remove(); };
+            
+            const video = document.createElement('video');
+            video.className = 'video-modal-video';
+            video.controls = true;
+            video.autoplay = true;
+            const source = document.createElement('source');
+            source.src = videoUrl;
+            source.type = 'video/mp4';
+            video.appendChild(source);
+            video.textContent = 'Tu navegador no soporta videos HTML5';
+            
+            content.appendChild(closeBtn);
+            content.appendChild(video);
+            backdrop.appendChild(content);
+            document.body.appendChild(backdrop);
         }
     </script>
 
