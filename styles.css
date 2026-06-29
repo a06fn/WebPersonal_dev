@@ -1,0 +1,148 @@
+/* ========== VARIABLES Y TEMAS ========== */
+:root {
+    --bg-dark: #0f172a;
+    --bg-light: #f8fafc;
+    --text-dark: #f8fafc;
+    --text-light: #0f172a;
+    --border-dark: #1e293b;
+    --border-light: #e2e8f0;
+}
+
+/* ========== BODY Y TEMA CLARO ========== */
+body { 
+    background-color: var(--bg-dark); 
+    color: var(--text-dark); 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+    --bg-dark: #f5f1eb;
+    --bg-light: #0f172a;
+    --text-dark: #3d2817;
+    --text-light: #f8fafc;
+    --border-dark: #d4c4b0;
+    --border-light: #1e293b;
+}
+
+/* ========== HEADER Y FOOTER ========== */
+header { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    background-color: var(--bg-dark); 
+    border-color: var(--border-dark); 
+    z-index: 50; 
+    border-bottom: 1px solid;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+footer { 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    background-color: var(--bg-dark); 
+    border-color: var(--border-dark); 
+    z-index: 50;
+    border-top: 1px solid;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ========== MAIN CONTENT ========== */
+main { 
+    margin-top: 70px; 
+    margin-bottom: 60px; 
+}
+
+/* ========== PROJECT CARDS ========== */
+.project-card:hover { 
+    transform: translateY(-3px); 
+    transition: all 0.3s ease; 
+}
+
+/* ========== SIDEBAR ========== */
+aside a {
+    transition: all 0.2s ease;
+}
+
+/* ========== SKILL ICONS ========== */
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: translateY(-3px);
+}
+
+.skill-icon i {
+    font-size: 1.75rem;
+}
+
+.skill-icon span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ========== TEMA CLARO - SECCIONES ========== */
+body.light-mode section#about,
+body.light-mode section#skills,
+body.light-mode section#projects,
+body.light-mode div[class*="bg-slate-800"] {
+    background-color: #f5f1eb !important;
+    border-color: #d4c4b0 !important;
+}
+
+/* ========== TEMA CLARO - TEXTOS GRISES ========== */
+body.light-mode .text-gray-400,
+body.light-mode .text-gray-500 {
+    color: #5d4837 !important;
+}
+
+/* ========== TEMA CLARO - HEADER ========== */
+body.light-mode header h1 {
+    color: #3d2817 !important;
+}
+
+/* ========== VISITOR COUNTER ========== */
+.visitor-counter {  
+    display: flex;  
+    align-items: center;  
+    gap: 8px;  
+    padding: 8px 12px;  
+    background: rgba(255, 255, 255, 0.15);  
+    border: 1px solid rgba(255, 255, 255, 0.2);  
+    border-radius: 6px;  
+    font-size: 12px;  
+    font-weight: 600;  
+    color: #f8fafc;  
+    transition: all 0.3s ease;  
+}
+
+.visitor-counter:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.visitor-counter img {  
+    height: 18px;  
+    vertical-align: middle;  
+}
+
+/* ========== TEMA CLARO - VISITOR COUNTER ========== */
+body.light-mode .visitor-counter {
+    background: rgba(15, 23, 42, 0.15);
+    border-color: rgba(15, 23, 42, 0.2);
+    color: #3d2817;
+}
+
+body.light-mode .visitor-counter:hover {
+    background: rgba(15, 23, 42, 0.25);
+}
